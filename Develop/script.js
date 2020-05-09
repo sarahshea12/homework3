@@ -53,7 +53,7 @@ for (i=0; i < length; i++) {
     console.log(selectsp);
   }
 }
-  // var password = generatePassword();
+  // var password = writePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
