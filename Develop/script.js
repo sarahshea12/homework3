@@ -16,7 +16,14 @@ var num = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 var sp = ["!", "@", "#", "$", "%", "^", "&", "*", "_", "-"]
 var selectCh = [0, 1, 2, 3]
 
-// Selections from arrays
+// Alert to select the right length
+if (length < 8 || length > 128) {
+  alert("Please select a number between 8 and 128.")
+}
+
+// Write password to the #password input
+function writePassword() {
+  // Selections from arrays
 for (i=0; i < length; i++) {
   // Selecting randomly which array to choose from
   var selector3 = selectCh[Math.floor(Math.random() * 4)];
@@ -46,23 +53,12 @@ for (i=0; i < length; i++) {
     console.log(selectsp);
   }
 }
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
+  // var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-// if <8 put in input, alert that there's not enough, same  with >128
-// if all are false, alert that they have not made a selection
-
-//make an alert of the result
-
-// at end, write "return.(name of function overall)"
-// blank array, insent choose letter, clear array
+//make an alert of the result, use return fx?
