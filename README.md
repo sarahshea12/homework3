@@ -1,1 +1,1 @@
-# homework3
+A website that creates a random password based on the user's preferences.
